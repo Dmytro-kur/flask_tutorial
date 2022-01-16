@@ -115,7 +115,7 @@ def reset_request():
             'An email has been sent with instructions to reset your password.',
             'info'
         )
-        return redirect(url_for('main.login'))
+        return redirect(url_for('users.login'))
     return render_template(
         'reset_request.html', title='Reset Password', form=form
     )
